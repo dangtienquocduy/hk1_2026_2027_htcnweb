@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form - Jackson Electronics</title>
+    <style>
+        body {
+            background-color: #9bc5eb;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            margin: 0 auto;
+        }
+        td {
+            padding: 4px;
+            vertical-align: top;
+        }
+        .center {
+            text-align: center;
+        }
+
+        /* CSS tạo logo */
+        .jackson-logo {
+            display: inline-block;
+            width: 220px;
+            background-color: #00ffff;
+            border: 2.5px solid #000000;
+            border-radius: 14px;
+            box-shadow: 5px 5px 0px #7ba3c6;
+            font-family: 'Times New Roman', serif;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+        .logo-top {
+            padding: 4px 0 2px 0;
+            border-bottom: 2.5px solid #000000;
+        }
+        .logo-bottom {
+            padding: 2px 0 4px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khối Logo và Tiêu đề -->
+    <div class="center">
+        <div class="jackson-logo">
+            <div class="logo-top">&#9889; Jackson</div>
+            <div class="logo-bottom">Electronics</div>
+        </div>
+        <h2>Registration Form</h2>
+        <p>Register your Jackson Electronics product here</p>
+    </div>
+
+    <!-- Form đăng ký -->
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td align="right">First Name:</td>
+                <td><input type="text" name="firstname" size="20"></td>
+                <td align="right">Last Name:</td>
+                <td><input type="text" name="lastname" size="20"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Address #1:</td>
+                <td colspan="3"><input type="text" name="address1" size="50"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Address #2:</td>
+                <td colspan="3"><input type="text" name="address2" size="50"></td>
+            </tr>
+
+            <tr>
+                <td align="right">City:</td>
+                <td><input type="text" name="city" size="20"></td>
+                <td colspan="2">
+                    State: <input type="text" name="state" size="4">
+                    Zip: <input type="text" name="zip" size="8">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Country:</td>
+                <td colspan="3"><input type="text" name="country" value="United States" size="20"></td>
+            </tr>
+
+            <tr>
+                <td colspan="4"><hr></td>
+            </tr>
+
+            <tr>
+                <td align="right">Product:</td>
+                <td colspan="3">
+                    <select name="product">
+                        <option value="scanmaster" selected>ScanMaster</option>
+                        <option value="laserjet">LaserJet</option>
+                        <option value="smartprint">SmartPrint</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Date Purchased:</td>
+                <td colspan="3"><input type="text" name="date_purchased" size="20"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Serial #:</td>
+                <td colspan="3"><input type="text" name="serial_number" size="20"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Used for:</td>
+                <td colspan="3">
+                    <table border="0" cellpadding="2" cellspacing="0">
+                        <tr>
+                            <td><label><input type="radio" name="used_for" value="Home"> Home</label></td>
+                            <td><label><input type="radio" name="used_for" value="Educational Institution"> Educational Institution</label></td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="radio" name="used_for" value="Business" checked> Business</label></td>
+                            <td><label><input type="radio" name="used_for" value="Other"> Other</label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label><input type="radio" name="used_for" value="Government"> Government</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">System (check all that apply):</td>
+                <td colspan="3">
+                    <table border="0" cellpadding="2" cellspacing="0">
+                        <tr>
+                            <td><label><input type="checkbox" name="system" value="Windows"> Windows</label></td>
+                            <td><label><input type="checkbox" name="system" value="UNIX"> UNIX</label></td>
+                        </tr>
+                        <tr>
+                            <td><label><input type="checkbox" name="system" value="Macintosh"> Macintosh</label></td>
+                            <td><label><input type="checkbox" name="system" value="Other"> Other</label></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Comments?:</td>
+                <td colspan="3">
+                    <textarea name="comments" rows="5" cols="45"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="center" style="padding-top: 15px;">
+                    <input type="submit" value="Click to register">
+                    <input type="reset" value="Click to cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
